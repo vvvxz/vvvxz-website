@@ -4,18 +4,23 @@ body {
   font-family: system-ui, sans-serif;
   font-size: 13px;
 }
+div.content {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
 header {
-  margin: 4rem auto 0;
-  padding: 0 10px;
   text-align: center;
   font-family: "courier new";
   line-height: 13px;
-  font-size: 13px;
 }
-a.title-name {
+a {
   display: inline-block;
   text-decoration: none;
   color: var(--uchu-yin);
+}
+a.title-name {
+  margin-bottom: 10px;
 }
 @keyframes hoverTitle {
   12% {
@@ -40,17 +45,35 @@ a.title-name {
     color: var(--uchu-orange);
   }
 }
-a.title-name:hover {
+a:hover {
   animation-name: hoverTitle;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   animation-duration: 8s;
 }
 main {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 30px;
+  margin-top: 4rem;
 }
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 10px;
+  text-align: left;
+}
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+p {
+  margin: 0;
+  align-content: center;
+}
+p.date {
+  text-align: right;
+}
+/*h1:hover {
+  text-decoration: underline;
+}*/
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -58,14 +81,7 @@ main {
     background: var(--uchu-yin);
     color: var(--uchu-yang);
   }
-  a.title-name {
+  a {
     color: var(--uchu-yang);
   }
 }
-/*
-@media screen and (max-width: 800px) {
-  header {
-    line-height: 30px;
-    font-size: 30px;
-  }
-}*/
