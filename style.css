@@ -1,0 +1,64 @@
+body {
+  background-color: var(--uchu-yang);
+  color: var(--uchu-yin);
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+}
+header {
+  margin: 4rem auto 0;
+  padding: 0 10px;
+  text-align: center;
+  font-family: "courier new";
+  line-height: 13px;
+  font-size: 13px;
+}
+a.title-name {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--uchu-yin);
+}
+@keyframes hoverTitle {
+  12% {
+    color: var(--uchu-red);
+  }
+  25% {
+    color: var(--uchu-pink);
+  }
+  38% {
+    color: var(--uchu-purple);
+  }
+  50% {
+    color: var(--uchu-blue);
+  }
+  62% {
+    color: var(--uchu-green);
+  }
+  75% {
+    color: var(--uchu-yellow);
+  }
+  88% {
+    color: var(--uchu-orange);
+  }
+}
+a.title-name:hover {
+  animation-name: hoverTitle;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 30px;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--uchu-yin);
+    color: var(--uchu-yang);
+  }
+  a.title-name {
+    color: var(--uchu-yang);
+  }
+}
