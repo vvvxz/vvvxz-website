@@ -62,3 +62,10 @@ main {
     color: var(--uchu-yang);
   }
 }
+/*
+@media screen and (max-width: 800px) {
+  header {
+    line-height: 30px;
+    font-size: 30px;
+  }
+}*/
