@@ -1,0 +1,83 @@
+body {
+  background-color: var(--uchu-yang);
+  color: var(--uchu-yin);
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+}
+div.content {
+  max-width: 700px;
+  margin: 0.5rem auto;
+  padding: 2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "courier new";
+  line-height: 13px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--uchu-yin);
+}
+@keyframes hoverTitle {
+  12% {
+    color: var(--uchu-red);
+  }
+  25% {
+    color: var(--uchu-pink);
+  }
+  38% {
+    color: var(--uchu-purple);
+  }
+  50% {
+    color: var(--uchu-blue);
+  }
+  62% {
+    color: var(--uchu-green);
+  }
+  75% {
+    color: var(--uchu-yellow);
+  }
+  88% {
+    color: var(--uchu-orange);
+  }
+}
+a:hover {
+  animation-name: hoverTitle;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+h1.title {
+  line-height: 25px;
+  font-size: 21px;
+  margin: 0px 0 0 30px;
+  text-align: right;
+}
+h1 {
+  font-size: 20px;
+}
+h1:hover {
+  text-decoration: underline;
+}
+/* Description included in flexbox so it can fold on phones.*/
+p.description {
+  margin: -17px 0px 5px;
+  font-size: 11px;
+  font-family: "courier new";
+  text-align: right;
+}
+main {
+  margin-top: 4rem;
+}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--uchu-yin);
+    color: var(--uchu-yang);
+  }
+  a {
+    color: var(--uchu-yang);
+  }
+}
