@@ -10,7 +10,7 @@ let outputE2;
 function loop() {
   let elementId1 = "gif1";
   let width = window.innerWidth;
-  let len = 7.8; // Char size
+  let len = 7.87; // Char size
   let x = width / len;
   let char = "╱╱╱╱╱╱╱╱╱╱╱╱╱╲╲╲╲╲╲╲╲╲╲╲╲╲╲";
   if (inc++ % speed == 0) {

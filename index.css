@@ -45,6 +45,13 @@ a:hover {
   animation-iteration-count: infinite;
   animation-duration: 8s;
 }
+div.animation {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.2;
+  font-family: "Simple Console", monospace;
+  font-variant-ligatures: none;
+}
 main {
   margin-top: 4rem auto;
 }
