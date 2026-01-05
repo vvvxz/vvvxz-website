@@ -3,20 +3,17 @@ body {
   color: var(--uchu-yin);
   font-family: system-ui, sans-serif;
   font-size: 13px;
-}
-div.content {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 0;
 }
 header {
+  margin-top: 2rem;
   text-align: center;
   font-family: "courier new";
   line-height: 13px;
 }
 a {
-  display: inline-block;
   text-decoration: none;
+  display: inline-block;
   color: var(--uchu-yin);
 }
 @keyframes hoverTitle {
@@ -49,7 +46,12 @@ a:hover {
   animation-duration: 8s;
 }
 main {
-  margin-top: 4rem;
+  margin-top: 4rem auto;
+}
+div.content {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 article {
   display: flex;
