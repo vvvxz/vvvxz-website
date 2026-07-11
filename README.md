@@ -1,3 +1,5 @@
 # vvvxz
 
-Work in progress
+Simple handmade personal website.
+
+Work in progress.
