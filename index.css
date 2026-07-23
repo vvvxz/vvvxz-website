@@ -2,14 +2,14 @@ body {
   background-color: var(--uchu-yang);
   color: var(--uchu-yin);
   font-family: system-ui, sans-serif;
-  font-size: 17px;
+  font-size: clamp(1px, 3vw, 16px);
   margin: 0;
 }
 header {
-  margin-top: 2rem;
+  margin-top: 2em;
   text-align: center;
   font-family: "courier new";
-  line-height: 17px;
+  line-height: 1em;
 }
 a {
   text-decoration: none;
@@ -47,7 +47,6 @@ a:hover {
 }
 div.animation {
   text-align: center;
-  font-size: 1em;
   line-height: 1.3em;
   font-family: "Simple Console", monospace;
   font-variant-ligatures: none;
@@ -57,32 +56,27 @@ main {
 }
 div.content {
   max-width: 700px;
-  margin: 5rem auto;
-  padding: 1rem;
+  margin: clamp(1px, 8vw, 40px) auto;
+  padding: 12px;
 }
 article {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: clamp(1px, 5vw, 30px);
 }
 h1 {
-  font-size: 20px;
   margin: 0;
+  font-size: 1.2em
 }
 p.description {
   margin: 0px 0px;
-  font-size: 13px;
   font-family: "courier new";
 }
 p.date {
   margin: 0;
   margin-left: 10px;
   align-self: center;
-  font-size: 15px;
 }
-/*h1:hover {
-  text-decoration: underline;
-}*/
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
