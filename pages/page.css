@@ -4,17 +4,40 @@ body {
   font-family: system-ui, sans-serif;
   font-size: 17px;
 }
+/*Padding for all the edges*/
 div.content {
   max-width: 700px;
   margin: 1rem auto;
   padding: 2rem;
 }
+
+/*Description (highest item on the page)*/
+p.description {
+  margin: 0px 0px 2px;
+  font-size: 15px;
+  font-family: "courier new";
+  text-align: right;
+}
+
+/*The header (logo and title, not description)*/
 header {
   display: flex;
   justify-content: space-between;
   font-family: "courier new";
   line-height: 17px;
+  gap: 30px;
 }
+
+/*Page title*/
+h1.title {
+  line-height: 30px;
+  font-size: 26px;
+  margin: 0;
+  text-align: right;
+  font-family: system-ui, sans-serif;
+}
+
+/*Link color and hover colors*/
 a {
   display: inline-block;
   text-decoration: none;
@@ -49,28 +72,45 @@ a:hover {
   animation-iteration-count: infinite;
   animation-duration: 8s;
 }
-h1.title {
-  line-height: 30px;
-  font-size: 27px;
-  margin: 0px 0 0 30px;
-  text-align: right;
+
+/*Main section (writing)*/
+main {
+  margin-top: 4rem;
 }
+
+/*Normal header*/
 h1 {
   font-size: 20px;
 }
 h1:hover {
   text-decoration: underline;
 }
-/* Description included in flexbox so it can fold on phones.*/
-p.description {
-  margin: -20px 0px 5px;
-  font-size: 15px;
-  font-family: "courier new";
-  text-align: right;
+
+/*Phone accessibility*/
+@media (max-width: 420px) {
+  div.content {
+    padding: 20px
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1.title {
+    text-align: center;
+    animation-name: hoverTitle;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+  }
+  p.description {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  main {
+    padding: 0 10px;
+  }
 }
-main {
-  margin-top: 4rem;
-}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
